@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="shortcut icon" href="img/vipericon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <div class="cotainer">
+            <div class="encriptar">
+                <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Digite o texto aqui..." oninput="validarTexto()"></textarea>
+            </div>
+            <div class="condicao">
+                <p>ATENÇÃO: O texto não pode conter letras maiúsculas, acentos ou caracteres especiais.</p>
+            </div>
+            <div class="botoes">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Criptografar</button>
+                <input type="button" class="btn-desencriptar" value="Descriptografar" onclick="desencriptar()">
+            </div>
+        </div>
+        <div class="encriptado">
+            <input type="button" class="btn-copiar" value="Copiar" onclick="copiar ()">
+            <img src="img/viper3.gif" alt="Foto de anime" id="boneco">
+            <div class="mensagem-encriptado" id="mesagem-encriptado">
+                <h2 id="titulo-mensagem"> Decodificador de Texto</h2>
+                <p id="paragrafo"> Insira o texto que deseja criptografar ou descriptografar</p>
+                <!-- <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="mensagem"></textarea> -->
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://www.instagram.com/carloosboorges/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/carloosboorges/">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://github.com/carloosboorges">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+        <h3>Desenvolvido por Carlos Borges</h3>
+    </footer>
+
+</body>
+<script src="index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
